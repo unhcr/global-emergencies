@@ -1,6 +1,6 @@
 # UNHCR Global Emergencies site
 
-Global Emergencies is microsite designed by [Development Seed](http://developmentseed.org) visualizing global emergency data from UNHCR. Available at <http://unhcr.github.org/global-emergencies>. 
+Global Emergencies is microsite designed by [Development Seed](http://developmentseed.org) visualizing global emergency data from UNHCR. Available at <http://unhcr.github.com/global-emergencies>. 
 
 ## System requirements
 

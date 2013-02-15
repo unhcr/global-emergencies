@@ -7,5 +7,3 @@ exclude:
   - design-source
   - bin
   - tilemill
-prose:
-  rooturl: "_posts"
