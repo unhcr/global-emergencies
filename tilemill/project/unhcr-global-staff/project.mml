@@ -1,0 +1,60 @@
+{
+  "bounds": [
+    -45.7031,
+    -22.5937,
+    75.5859,
+    55.9738
+  ],
+  "center": [
+    21.6211,
+    20.7972,
+    3
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "staff",
+    "template_teaser": "<div class='int-general'>\n<div class='int-title'>{{{country}}}</div>\n<div class='int-value'><span class='value-bold'>{{{emergency_deployments}}}</span> Emergency Deployments</div>\n<div class='int-value2'><span class='value-bold'>{{{num_staff}}}</span> Total staff</div>\n<div class='int-date'></div>\n</div>",
+    "fields": [
+      "country",
+      "emergency_deployments",
+      "num_staff"
+    ],
+    "template_location": ""
+  },
+  "minzoom": 2,
+  "maxzoom": 8,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "point",
+      "extent": [
+        -10.342916536316473,
+        -2.879592934880224,
+        43.74498637746062,
+        39.060957862458906
+      ],
+      "id": "staff",
+      "class": "",
+      "Datasource": {
+        "file": "../../../data/geo/staff.geojson",
+        "id": "staff",
+        "project": "unhcr-staff",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "staff"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "http://a.tiles.mapbox.com/v3/nate.map-5xqesnq5.jsonp",
+  "name": "unhcr-staff",
+  "description": "",
+  "legend": "",
+  "attribution": ""
+}

@@ -1,0 +1,63 @@
+{
+  "bounds": [
+    -35.8594,
+    -26.4312,
+    86.8359,
+    51.1793
+  ],
+  "center": [
+    20.2148,
+    20.4682,
+    3
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "refugee-dots",
+    "template_teaser": "<div class='int-bigcolumn'>\n<div class='int-title'>{{{host}}}</div>\n<div class='col1'>\n<div class=\"item1\">Pct Female: <span class=\"pct\">{{{pct_female}}}%</span></div>\n<div class=\"item2\">Pct Male: <span class=\"pct\">{{{pct_male}}}%</span></div>\n<div class=\"item3\">Pct Under-18: <span class=\"pct\">{{{pct_under18}}}%</span></div>\n</div>\n<div class='col2'>\n<div class='bignum'>{{{refugee_pop_str}}} people displaced</div>\n</div>\n<div class='int-date'>(Updated: {{{date}}})</div>\n</div>",
+    "fields": [
+      "host",
+      "refugee_pop_str",
+      "pct_female",
+      "pct_male",
+      "pct_under18",
+      "date"
+    ],
+    "template_location": ""
+  },
+  "minzoom": 0,
+  "maxzoom": 8,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "point",
+      "extent": [
+        -10.342916536316473,
+        -2.879592934880224,
+        43.74498637746062,
+        39.060957862458906
+      ],
+      "id": "refugee-dots",
+      "class": "",
+      "Datasource": {
+        "file": "../../../data/geo/refugees.geojson",
+        "id": "refugee-dots",
+        "project": "unhcr-global-refugees",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "refugee-dots"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "http://a.tiles.mapbox.com/v3/nate.map-5xqesnq5.jsonp",
+  "name": "unhcr-refugees",
+  "description": "",
+  "legend": "",
+  "attribution": ""
+}

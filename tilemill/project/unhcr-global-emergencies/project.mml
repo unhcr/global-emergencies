@@ -1,0 +1,60 @@
+{
+  "bounds": [
+    -22.5,
+    -22.2688,
+    71.543,
+    44.0876
+  ],
+  "center": [
+    17.0508,
+    16.9727,
+    3
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "emergencies",
+    "template_teaser": "<div class='int-general'>\n<div class='int-title'>{{{emergency}}}</div>\n<div class='int-date'>{{{note}}}</div>\n</div>",
+    "fields": [
+      "emergency",
+      "note",
+      "url"
+    ],
+    "template_location": "{{{url}}}"
+  },
+  "minzoom": 0,
+  "maxzoom": 8,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "point",
+      "extent": [
+        -3.539079383008624,
+        -2.879592934880221,
+        38.50464856599531,
+        35.02299323188233
+      ],
+      "id": "emergencies",
+      "class": "",
+      "Datasource": {
+        "file": "../../../data/site-data/unhcr-portals.geojson",
+        "id": "emergencies",
+        "project": "unhcr-emergencies",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "emergencies"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "http://a.tiles.mapbox.com/v3/nate.map-5xqesnq5.jsonp",
+  "name": "unhcr-global-emergencies",
+  "description": "UNHCR Emergency Locations",
+  "legend": "",
+  "attribution": ""
+}

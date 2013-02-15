@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    -58.7109,
+    -45.8288,
+    94.2188,
+    64.9235
+  ],
+  "center": [
+    20.2149,
+    22.2687,
+    3
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "funded",
+    "template_teaser": "<div class='int-column'>\n<div class=\"int-title\">{{{emergency}}}</div>\n<div class='col1'><div class=\"item1\">Recieved: ${{{fund_receive}}}</div>\n<div class=\"item2\">Shortfall: ${{{fund_shortfall}}}</div></div>\n<div class='col2'><div class='bignum'>{{{pct_funded}}}% funded</div></div>\n<div class=\"date\">(Updated: {{{date}}})</div>\n</div>\n\n\n",
+    "fields": [
+      "emergency",
+      "fund_receive",
+      "fund_shortfall",
+      "pct_funded",
+      "date"
+    ],
+    "template_location": ""
+  },
+  "minzoom": 0,
+  "maxzoom": 8,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -12.264130412398908,
+        -13.458350524973824,
+        42.37718550657177,
+        37.32490631155682
+      ],
+      "id": "funded",
+      "class": "",
+      "Datasource": {
+        "file": "../../../data/geo/finances.geojson",
+        "id": "funded",
+        "project": "unhcr-pct-funded",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "funded"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "http://a.tiles.mapbox.com/v3/nate.map-5xqesnq5.jsonp",
+  "name": "unhcr-pct-funded",
+  "description": "",
+  "legend": "",
+  "attribution": ""
+}

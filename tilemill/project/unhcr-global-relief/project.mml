@@ -1,0 +1,108 @@
+{
+  "bounds": [
+    -22.5879,
+    -11.8674,
+    60.9082,
+    50.9584
+  ],
+  "center": [
+    15.9082,
+    31.5036,
+    3
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "items",
+    "template_teaser": "<div class='int-table'>\n<div class='int-title'>{{{country}}}</div>\n<div class='int-value'><span class='value-bold'>{{{total_str}}}</span> relief items distributed</div>\n<table class='relief-table'>\n<tr class='row1'>\n<td><span class='sleepingMats'>Sleeping Mats: </span><span class='table-number'>{{{sleepingMats}}}</span></td>\n<td><span class='blankets'>Blankets: </span><span class='table-number'>{{{blankets}}}</span></td>\n</tr>\n<tr class='row2'>\n<td><span class='mosquitoNets'>Mosquito Nets: </span><span class='table-number'>{{{mosquitoNets}}}</span></td>\n<td><span class='kitchenSets'>Kitchen Sets: </span><span class='table-number'>{{{kitchenSets}}}</span></td>\n</tr>\n<tr class='row3'>\n<td><span class='tent'>Tents: </span><span class='table-number'>{{{tents}}}</span></td>\n<td><span class='jerryCans'>Jerry Cans: </span><span class='table-number'>{{{jerryCans}}}</span></td>\n</tr>\n</table>\n<div class='int-date'>(Updated: {{{date}}})</div>\n</div>\n",
+    "fields": [
+      "country",
+      "total_str",
+      "sleepingMats",
+      "blankets",
+      "buckets",
+      "kitchenSets",
+      "tents",
+      "jerryCans",
+      "date"
+    ],
+    "template_location": ""
+  },
+  "minzoom": 2,
+  "maxzoom": 8,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "linestring",
+      "extent": [
+        -10.332297999999998,
+        -2.686475999999994,
+        43.772134999999984,
+        46.202
+      ],
+      "id": "relief",
+      "class": "",
+      "Datasource": {
+        "file": "../../../data/geo/unhcr-relief-items-arcs.geojson",
+        "id": "relief",
+        "project": "unhcr-relief",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "relief"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        6.146,
+        46.202,
+        6.146,
+        46.202
+      ],
+      "id": "hq",
+      "class": "",
+      "Datasource": {
+        "file": "../../../data/geo/country-coords.csv",
+        "id": "hq",
+        "project": "unhcr-relief",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "hq"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -10.342916536316473,
+        -1.99275046821626,
+        43.74498637746062,
+        39.060957862458906
+      ],
+      "id": "items",
+      "class": "",
+      "Datasource": {
+        "file": "../../../data/geo/relief-items.geojson",
+        "id": "items",
+        "project": "unhcr-relief",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "items"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "http://a.tiles.mapbox.com/v3/nate.map-5xqesnq5.jsonp",
+  "name": "unhcr-relief-distribution",
+  "description": "",
+  "legend": "",
+  "attribution": ""
+}

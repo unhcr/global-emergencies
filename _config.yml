@@ -1,0 +1,11 @@
+auto: true
+server: true
+baseurl: /global-emergencies
+exclude: 
+exclude:
+  - README.md
+  - design-source
+  - bin
+  - tilemill
+prose:
+  rooturl: "_posts"
