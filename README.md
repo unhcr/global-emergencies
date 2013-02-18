@@ -49,5 +49,3 @@ cd bin/
 
 ### [See here for complete data update documentation](https://github.com/unhcr/global-emergencies/wiki/Data-Update-Documentation)
 
-
-
