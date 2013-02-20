@@ -100,7 +100,7 @@
   ],
   "scale": 1,
   "metatile": 2,
-  "_basemap": "http://a.tiles.mapbox.com/v3/nate.map-5xqesnq5.jsonp",
+  "_basemap": "http://a.tiles.mapbox.com/v3/unhcr.map-y08nvydq.jsonp",
   "name": "unhcr-relief-distribution",
   "description": "",
   "legend": "",

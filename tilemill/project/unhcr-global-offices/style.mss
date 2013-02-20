@@ -19,8 +19,9 @@
   marker-allow-overlap:true;
   marker-opacity: 0.9;
   [zoom >= 0][zoom <=2]{marker-width:0.5;}
-  [zoom >=6][zoom <= 8]{marker-width:4;}
-  [zoom > 8]{marker-width:15;}
+  [zoom = 4]{marker-width:4;}
+  [zoom >=5][zoom <= 6]{marker-width:9;}
+  [zoom > 6]{marker-width:15;}
 }
 [TYPE = "RO"]{
   marker-width:2;
@@ -29,8 +30,9 @@
   marker-allow-overlap:true;
   marker-opacity: 0.9;
   [zoom >= 0][zoom <=2]{marker-width:0.5;}
-  [zoom >=6][zoom <= 8]{marker-width:4;}
-  [zoom > 8]{marker-width:15;}
+  [zoom = 4]{marker-width:4;}
+  [zoom >=5][zoom <= 6]{marker-width:9;}
+  [zoom > 6]{marker-width:15;}
 }
 [TYPE = "GO"]{
   marker-width:2;
@@ -39,8 +41,9 @@
   marker-allow-overlap:true;
   marker-opacity: 0.9;
   [zoom >= 0][zoom <=2]{marker-width:0.5;}
-  [zoom >=6][zoom <= 8]{marker-width:4;}
-  [zoom > 8]{marker-width:15;}    
+  [zoom = 4]{marker-width:4;}
+  [zoom >=5][zoom <= 6]{marker-width:9;}
+  [zoom > 6]{marker-width:15;}
 }
 [TYPE = "HO"]{
   marker-width:2;
@@ -49,8 +52,9 @@
   marker-allow-overlap:true;
   marker-opacity: 0.9;
   [zoom >= 0][zoom <=2]{marker-width:0.5;}
-  [zoom >=6][zoom <= 8]{marker-width:4;}
-  [zoom > 8]{marker-width:15;}    
+  [zoom = 4]{marker-width:4;}
+  [zoom >=5][zoom <= 6]{marker-width:9;}
+  [zoom > 6]{marker-width:15;}
 }
 [TYPE = "BO"]{
   marker-width:2;
@@ -59,8 +63,9 @@
   marker-allow-overlap:true;
   marker-opacity: 0.9;
   [zoom >= 0][zoom <=2]{marker-width:0.5;}
-  [zoom >=6][zoom <= 8]{marker-width:4;}
-  [zoom > 8]{marker-width:15;}    
+  [zoom = 4]{marker-width:4;}
+  [zoom >=5][zoom <= 6]{marker-width:9;}
+  [zoom > 6]{marker-width:15;}
 }
 [TYPE = "CO"]{
   marker-width:2;
@@ -69,8 +74,9 @@
   marker-allow-overlap:true;
   marker-opacity: 0.9;
   [zoom >= 0][zoom <=2]{marker-width:0.5;}
-  [zoom >=6][zoom <= 8]{marker-width:4;}
-  [zoom > 8]{marker-width:15;}    
+  [zoom = 4]{marker-width:4;}
+  [zoom >=5][zoom <= 6]{marker-width:9;}
+  [zoom > 6]{marker-width:15;}
 }
 [TYPE = "LO"]{
   marker-width:2;
@@ -79,8 +85,9 @@
   marker-allow-overlap:true;
   marker-opacity: 0.9;
   [zoom >= 0][zoom <=2]{marker-width:0.5;}
-  [zoom >=6][zoom <= 8]{marker-width:4;}
-  [zoom > 8]{marker-width:15;}    
+  [zoom = 4]{marker-width:4;}
+  [zoom >=5][zoom <= 6]{marker-width:9;}
+  [zoom > 6]{marker-width:15;}
 }
 [TYPE = "SO"]{
   marker-width:2;
@@ -89,8 +96,9 @@
   marker-allow-overlap:true;
   marker-opacity: 0.9;
   [zoom >= 0][zoom <=2]{marker-width:0.5;}
-  [zoom >=6][zoom <= 8]{marker-width:4;}
-  [zoom > 8]{marker-width:15;}    
+  [zoom = 4]{marker-width:4;}
+  [zoom >=5][zoom <= 6]{marker-width:9;}
+  [zoom > 6]{marker-width:15;}
 }
 [TYPE = "FO"]{
   marker-width:2;
@@ -99,8 +107,9 @@
   marker-allow-overlap:true;
   marker-opacity: 0.9;
   [zoom >= 0][zoom <=2]{marker-width:0.5;}
-  [zoom >=6][zoom <= 8]{marker-width:4;}
-  [zoom > 8]{marker-width:15;}    
+  [zoom = 4]{marker-width:4;}
+  [zoom >=5][zoom <= 6]{marker-width:9;}
+  [zoom > 6]{marker-width:15;}
 }
 [TYPE = "TO"]{
   marker-width:2;
@@ -109,8 +118,9 @@
   marker-allow-overlap:true;
   marker-opacity: 0.9;
   [zoom >= 0][zoom <=2]{marker-width:0.5;}
-  [zoom >=6][zoom <= 8]{marker-width:4;}
-  [zoom > 8]{marker-width:15;}    
+  [zoom = 4]{marker-width:4;}
+  [zoom >=5][zoom <= 6]{marker-width:9;}
+  [zoom > 6]{marker-width:15;}
 }
 [TYPE = "FU"]{
   marker-width:2;
@@ -119,7 +129,8 @@
   marker-allow-overlap:true;
   marker-opacity: 0.9;
   [zoom >= 0][zoom <=2]{marker-width:0.5;}
-  [zoom >=6][zoom <= 8]{marker-width:4;}
-  [zoom > 8]{marker-width:15;}    
+  [zoom = 4]{marker-width:4;}
+  [zoom >=5][zoom <= 6]{marker-width:9;}
+  [zoom > 6]{marker-width:15;}
 }
 }
