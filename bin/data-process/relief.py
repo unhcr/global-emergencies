@@ -1,4 +1,4 @@
-import sys, csv, locale, os
+import sys, csv, locale, os, traceback
 import simplejson as json
 from itertools import groupby
 locale.setlocale(locale.LC_ALL, '')
@@ -18,17 +18,21 @@ try:
     country_data = []
     relief_data = []
     for r,relief in groupby(data_sort, lambda x: x['isocode']):
-        relief_data = [r]
+        relief_data = []
         relief_items = {}
         items = []
         amounts = []
         date = []
         country = []
+        ctry_from = []
         for re in relief: 
             country.append(re['country'])
+            ctry_from.append(re['from'])
             items.append(re['items'])
             amounts.append(int(re['total']))
             date.append(re['date'])
+        relief_data.append(ctry_from.pop())
+        relief_data.append(r)
         relief_data.append(sum(amounts))
         relief_items = dict(zip(items, amounts))
         relief_data.append(relief_items)
@@ -36,54 +40,55 @@ try:
         relief_data.append(items)
         relief_data.append(country.pop())
         country_data.append(relief_data)
+        print country_data
 
     geodata = {"type": "FeatureCollection","features": []}
     rowid = 0
     for g in geo['features']:
         for c in country_data:
-            if g['properties']['ISO_A3'] == c[0]:
+            if g['properties']['ISO_A3'] == c[1]:
                 rowid = rowid + 1
-                itemKeys = c[2].keys()
+                itemKeys = c[3].keys()
                 data = {
                     "type": "Feature", 
                     "id": rowid, 
                     "properties": {
-                        'isocode': c[0],
-                        'total': c[1],
-                        'total_str': '{:,}'.format(c[1]),
+                        'isocode': c[1],
+                        'total': c[2],
+                        'total_str': '{:,}'.format(c[2]),
                         'blankets': "",
                         'mosquitoNets': "",
                         'sleepingMats': "",
                         'jerryCans': "",
                         'kitchenSets': "",
                         'tents': "",
-                        'date': c[3],
-                        'country': c[5]
+                        'date': c[4],
+                        'country': c[6]
                     }, 
                 "geometry": g['geometry']
                 }
                 if "Blankets" in itemKeys:
-                    data['properties']['blankets'] = "%s" % '{:,}'.format(c[2]['Blankets'])
+                    data['properties']['blankets'] = "%s" % '{:,}'.format(c[3]['Blankets'])
                 else:
                     data['properties']['blankets'] = "--"
                 if "Mosquito nets" in itemKeys:
-                    data['properties']['mosquitoNets'] = "%s" % '{:,}'.format(c[2]['Mosquito nets'])
+                    data['properties']['mosquitoNets'] = "%s" % '{:,}'.format(c[3]['Mosquito nets'])
                 else:
                     data['properties']['mosquitoNets'] = "--"
                 if "Sleeping mats" in itemKeys:
-                    data['properties']['sleepingMats'] = "%s" % '{:,}'.format(c[2]['Sleeping mats'])
+                    data['properties']['sleepingMats'] = "%s" % '{:,}'.format(c[3]['Sleeping mats'])
                 else:
                     data['properties']['sleepingMats'] = "--"
                 if "Jerry cans" in itemKeys:
-                    data['properties']['jerryCans'] = "%s" % '{:,}'.format(c[2]['Jerry cans'])
+                    data['properties']['jerryCans'] = "%s" % '{:,}'.format(c[3]['Jerry cans'])
                 else:
                     data['properties']['jerryCans'] = "--"
                 if "Kitchen sets" in itemKeys:
-                    data['properties']['kitchenSets'] = "%s" % '{:,}'.format(c[2]['Kitchen sets'])
+                    data['properties']['kitchenSets'] = "%s" % '{:,}'.format(c[3]['Kitchen sets'])
                 else:
                     data['properties']['kitchenSets'] = "--"
                 if "Tents (Family)" in itemKeys:
-                    data['properties']['tents'] = "%s" % '{:,}'.format(c[2]['Tents (Family)'])
+                    data['properties']['tents'] = "%s" % '{:,}'.format(c[3]['Tents (Family)'])
                 else: 
                     data['properties']['tents'] = "--"
                 geodata['features'].append(data)
@@ -101,8 +106,8 @@ try:
     writer = csv.writer(out)
     writer.writerow(header)
     for row in country_data:
-        row.insert(0,"AUT")
         writer.writerow(row[0:3])
     out.close()
-except:
-    print "Unexpected error: %s" % sys.argv[0]
+except StandardError, err:
+    print "Unexpected error"
+    traceback.print_exc(file=sys.stdout)

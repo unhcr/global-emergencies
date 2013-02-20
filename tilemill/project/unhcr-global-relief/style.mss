@@ -76,7 +76,7 @@
   }
 }
 
-#hq [iso = "AUT"] { 
+#hq [iso = "CHE"] { 
   marker-width:25;
   marker-fill:#d2d2d2;
   marker-line-width:1.5;

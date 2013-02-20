@@ -19,7 +19,7 @@
       "total_str",
       "sleepingMats",
       "blankets",
-      "buckets",
+      "mosquitoNets",
       "kitchenSets",
       "tents",
       "jerryCans",
@@ -68,7 +68,7 @@
       "Datasource": {
         "file": "../../../data/geo/country-coords.csv",
         "id": "hq",
-        "project": "unhcr-relief",
+        "project": "unhcr-global-relief",
         "srs": ""
       },
       "srs-name": "autodetect",
