@@ -170,7 +170,7 @@
 ,
 { "type": "Feature", "id": 83, "properties": { "SOVEREIGNT": "United Kingdom", "SOV_A3": "GB1", "ADMIN": "Guernsey", "ADM0_A3": "GGY", "NAME": "Guernsey", "ABBREV": "Guern.", "NAME_FORMA": "Bailiwick of Guernsey", "TERR_": "Crown dependency of U.K.", "NAME_SORT": "Guernsey", "ISO_A2": "GG", "ISO_A3": "GGY", "ISO_N3": 831.0 }, "geometry": { "type": "Point", "coordinates": [ -2.531013439745915, 49.484318518590193 ] } }
 ,
-{ "type": "Feature", "id": 84, "properties": { "SOVEREIGNT": "Ghana", "SOV_A3": "GHA", "ADMIN": "Ghana", "ADM0_A3": "GHA", "NAME": "Ghana", "ABBREV": "Ghana", "NAME_FORMA": "Republic of Ghana", "TERR_": "", "NAME_SORT": "Ghana", "ISO_A2": "GH", "ISO_A3": "GHA", "ISO_N3": 288.0 }, "geometry": { "type": "Point", "coordinates": [ -1.216466155497857, 7.953797162534542 ] } }
+{ "type": "Feature", "id": 84, "properties": { "SOVEREIGNT": "Ghana", "SOV_A3": "GHA", "ADMIN": "Ghana", "ADM0_A3": "GHA", "NAME": "Ghana", "ABBREV": "Ghana", "NAME_FORMA": "Republic of Ghana", "TERR_": "", "NAME_SORT": "Ghana", "ISO_A2": "GH", "ISO_A3": "GHA", "ISO_N3": 288.0 }, "geometry": { "type": "Point", "coordinates": [ -1.207301, 7.177092 ] } }
 ,
 { "type": "Feature", "id": 85, "properties": { "SOVEREIGNT": "United Kingdom", "SOV_A3": "GB1", "ADMIN": "Gibraltar", "ADM0_A3": "GIB", "NAME": "Gibraltar", "ABBREV": "Gib.", "NAME_FORMA": "", "TERR_": "U.K.", "NAME_SORT": "Gibraltar", "ISO_A2": "GI", "ISO_A3": "GIB", "ISO_N3": 292.0 }, "geometry": { "type": "Point", "coordinates": [ -5.371520409261624, 36.129256693647768 ] } }
 ,
@@ -232,7 +232,7 @@
 ,
 { "type": "Feature", "id": 114, "properties": { "SOVEREIGNT": "United Kingdom", "SOV_A3": "GB1", "ADMIN": "Jersey", "ADM0_A3": "JEY", "NAME": "Jersey", "ABBREV": "Jey.", "NAME_FORMA": "Bailiwick of Jersey", "TERR_": "Crown dependency of U.K.", "NAME_SORT": "Jersey", "ISO_A2": "JE", "ISO_A3": "JEY", "ISO_N3": 832.0 }, "geometry": { "type": "Point", "coordinates": [ -2.126824220178567, 49.220805046562333 ] } }
 ,
-{ "type": "Feature", "id": 115, "properties": { "SOVEREIGNT": "Jordan", "SOV_A3": "JOR", "ADMIN": "Jordan", "ADM0_A3": "JOR", "NAME": "Jordan", "ABBREV": "Jord.", "NAME_FORMA": "Hashemite Kingdom of Jordan", "TERR_": "", "NAME_SORT": "Jordan", "ISO_A2": "JO", "ISO_A3": "JOR", "ISO_N3": 400.0 }, "geometry": { "type": "Point", "coordinates": [ 36.770946216999185, 31.245598365481264 ] } }
+{ "type": "Feature", "id": 115, "properties": { "SOVEREIGNT": "Jordan", "SOV_A3": "JOR", "ADMIN": "Jordan", "ADM0_A3": "JOR", "NAME": "Jordan", "ABBREV": "Jord.", "NAME_FORMA": "Hashemite Kingdom of Jordan", "TERR_": "", "NAME_SORT": "Jordan", "ISO_A2": "JO", "ISO_A3": "JOR", "ISO_N3": 400.0 }, "geometry": { "type": "Point", "coordinates": [ 36.288613, 31.312616 ] } }
 ,
 { "type": "Feature", "id": 116, "properties": { "SOVEREIGNT": "Japan", "SOV_A3": "JPN", "ADMIN": "Japan", "ADM0_A3": "JPN", "NAME": "Japan", "ABBREV": "Japan", "NAME_FORMA": "", "TERR_": "", "NAME_SORT": "Japan", "ISO_A2": "JP", "ISO_A3": "JPN", "ISO_N3": 392.0 }, "geometry": { "type": "Point", "coordinates": [ 137.99253526034758, 37.555900742141844 ] } }
 ,
@@ -302,7 +302,7 @@
 ,
 { "type": "Feature", "id": 149, "properties": { "SOVEREIGNT": "Macedonia", "SOV_A3": "MKD", "ADMIN": "Macedonia", "ADM0_A3": "MKD", "NAME": "Macedonia", "ABBREV": "Mkd.", "NAME_FORMA": "Republic of Macedonia", "TERR_": "", "NAME_SORT": "Macedonia, The former Yugoslav Republic of", "ISO_A2": "MK", "ISO_A3": "MKD", "ISO_N3": 807.0 }, "geometry": { "type": "Point", "coordinates": [ 21.683830423463714, 41.595004796237745 ] } }
 ,
-{ "type": "Feature", "id": 150, "properties": { "SOVEREIGNT": "Mali", "SOV_A3": "MLI", "ADMIN": "Mali", "ADM0_A3": "MLI", "NAME": "Mali", "ABBREV": "Mali", "NAME_FORMA": "Republic of Mali", "TERR_": "", "NAME_SORT": "Mali", "ISO_A2": "ML", "ISO_A3": "MLI", "ISO_N3": 466.0 }, "geometry": { "type": "Point", "coordinates": [ -3.539079383008623, 17.344162779172606 ] } }
+{ "type": "Feature", "id": 150, "properties": { "SOVEREIGNT": "Mali", "SOV_A3": "MLI", "ADMIN": "Mali", "ADM0_A3": "MLI", "NAME": "Mali", "ABBREV": "Mali", "NAME_FORMA": "Republic of Mali", "TERR_": "", "NAME_SORT": "Mali", "ISO_A2": "ML", "ISO_A3": "MLI", "ISO_N3": 466.0 }, "geometry": { "type": "Point", "coordinates": [ -2.717947, 17.682358 ] } }
 ,
 { "type": "Feature", "id": 151, "properties": { "SOVEREIGNT": "Malta", "SOV_A3": "MLT", "ADMIN": "Malta", "ADM0_A3": "MLT", "NAME": "Malta", "ABBREV": "Malta", "NAME_FORMA": "Republic of Malta", "TERR_": "", "NAME_SORT": "Malta", "ISO_A2": "MT", "ISO_A3": "MLT", "ISO_N3": 470.0 }, "geometry": { "type": "Point", "coordinates": [ 14.404244664742729, 35.920801194881761 ] } }
 ,

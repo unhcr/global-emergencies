@@ -1,9 +1,9 @@
 {
   "bounds": [
-    -22.5879,
-    -11.8674,
-    60.9082,
-    50.9584
+    -25.4443,
+    -14.9448,
+    129.0674,
+    57.5158
   ],
   "center": [
     15.9082,
@@ -38,9 +38,9 @@
       "geometry": "linestring",
       "extent": [
         -10.332297999999998,
-        -2.686475999999994,
-        43.772134999999984,
-        46.202
+        -6.270354000000001,
+        122.87870799999999,
+        55.963398000000005
       ],
       "id": "relief",
       "class": "",
@@ -50,31 +50,10 @@
         "project": "unhcr-relief",
         "srs": ""
       },
-      "srs-name": "autodetect",
-      "srs": "",
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "advanced": {},
       "name": "relief"
-    },
-    {
-      "geometry": "point",
-      "extent": [
-        6.146,
-        46.202,
-        6.146,
-        46.202
-      ],
-      "id": "hq",
-      "class": "",
-      "Datasource": {
-        "file": "../../../data/geo/country-coords.csv",
-        "id": "hq",
-        "project": "unhcr-global-relief",
-        "srs": ""
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "hq"
     },
     {
       "geometry": "point",
@@ -89,7 +68,7 @@
       "Datasource": {
         "file": "../../../data/geo/relief-items.geojson",
         "id": "items",
-        "project": "unhcr-relief",
+        "project": "unhcr-global-relief",
         "srs": ""
       },
       "srs-name": "autodetect",

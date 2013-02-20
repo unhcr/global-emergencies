@@ -40,7 +40,6 @@ try:
         relief_data.append(items)
         relief_data.append(country.pop())
         country_data.append(relief_data)
-        print country_data
 
     geodata = {"type": "FeatureCollection","features": []}
     rowid = 0
@@ -108,6 +107,31 @@ try:
     for row in country_data:
         writer.writerow(row[0:3])
     out.close()
+
+    geodata = {"type": "FeatureCollection","features": []}
+    rowid = 0
+    for g in geo['features']:
+        for c in country_data:
+            if g['properties']['ISO_A3'] == c[0]:
+                rowid = rowid + 1
+                data = {
+                    "type": "Feature", 
+                    "id": rowid, 
+                    "properties": {
+                        'isocode': c[0],
+                        'total': c[2],
+                        'country': g['properties']['NAME']
+                    },
+                "geometry": g['geometry']
+                }
+                geodata['features'].append(data)
+
+    data_writeout = json.dumps(geodata)
+    f_out = open('data/geo/relief-source.geojson', 'wb')
+    f_out.writelines(data_writeout)
+    f_out.close()                                                     
+
+
 except StandardError, err:
     print "Unexpected error"
     traceback.print_exc(file=sys.stdout)

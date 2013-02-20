@@ -44,8 +44,10 @@ csv()
             countries[data['iso_end']].lon,
             countries[data['iso_end']].lat
         );
-        var gc = new arc.GreatCircle(start, end, data);
-        features.push(gc.Arc(50).json());
+        if (countries[data['iso_start']].lon != countries[data['iso_end']].lon && countries[data['iso_start']].lat != countries[data['iso_end']].lat){
+            var gc = new arc.GreatCircle(start, end, data);
+            features.push(gc.Arc(50).json());
+        }
     })
     .on('end', function() {
         fs.writeFileSync(outFile, JSON.stringify(geojson));

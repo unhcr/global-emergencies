@@ -7,7 +7,7 @@ $(function() {
         layers = [
             'unhcr.unhcr-global-emergency-countries,unhcr.unhcr-global-emergencies',
             'unhcr.unhcr-global-emergency-countries,unhcr.unhcr-global-refugees',
-            'unhcr.unhcr-global-emergency-countries,unhcr.unhcr-global-offices,unhcr.unhcr-global-relief',
+            'unhcr.unhcr-global-emergency-countries,unhcr.unhcr-global-offices,unhcr.unhcr-global-relief,unhcr.unhcr-global-relief-source',
             'unhcr.unhcr-global-emergency-countries,unhcr.unhcr-global-offices,unhcr.unhcr-global-staff',
             'unhcr.unhcr-global-emergency-countries,unhcr.unhcr-global-pct-funded',
             'unhcr.unhcr-global-emergency-countries,unhcr.unhcr-global-infoportals'
