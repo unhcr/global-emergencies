@@ -1,4 +1,4 @@
-import sys, csv, locale, os
+import sys, csv, locale, os, traceback
 import simplejson as json
 from itertools import groupby
 locale.setlocale(locale.LC_ALL, '')
@@ -11,14 +11,14 @@ try:
 	data_file = csv.DictReader(open('data/update-data/unhcr-finances.csv', 'rb'), delimiter= ',', quotechar = '"')
 	data_sort = sorted(data_file, key=lambda x: x['isocode'])
 
-	geo_file = open('data/process-data/world-full-centroids.geojson', "rb").read()
+	geo_file = open('data/process-data/world-centroids.geojson', "rb").read()
 	geo = json.loads(geo_file)
 
 	geodata = {"type": "FeatureCollection","features": []}
 	rowid = 0
 	for g in geo['features']:
 	    for d in data_sort:
-	        if d['isocode'] == g['properties']['ISO_A3']:
+	        if d['isocode'] == g['properties']['iso']:
 	        	rowid = rowid + 1
 		    	data = {
 		    		"type": "Feature", 
@@ -41,5 +41,6 @@ try:
 	f_out = open('data/geo/finances.geojson', 'wb')
 	f_out.writelines(data_writeout)
 	f_out.close()
-except:
-	print "Unexpected error: %s" % sys.argv[0]
+except StandardError, err:
+    print "Unexpected error"
+    traceback.print_exc(file=sys.stdout)

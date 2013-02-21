@@ -1,4 +1,4 @@
-name,region,natural_name,lon,lat,iso
+full_name,region,name,lon,lat,iso
 Afghanistan,SA,Afghanistan,66.026471,33.838806,AFG
 Albania,ECA,Albania,20.068385,41.142285,ALB
 Algeria,MENA,Algeria,2.632388,28.163239,DZA
@@ -33,8 +33,8 @@ Chile,LAC,Chile,-70.947023,-33.82011,CHL
 China,EAP,China,103.904056,36.567909,CHN
 Colombia,LAC,Colombia,-73.073369,3.901156,COL
 Comoros,AFR,Comoros,43.67592,-11.892755,COM
-"Congo, Democratic Republic of",AFR,Democratic Republic of Congo,23.275488,-2.686476,COD
-"Congo, Republic of",AFR,Republic of Congo,15.84101,-0.176075,COG
+Democratic Republic of Congo,AFR,Democratic Republic of Congo,23.275488,-2.686476,COD
+Republic of Congo,AFR,Republic of Congo,15.84101,-0.176075,COG
 Costa Rica,LAC,Costa Rica,-84.187942,9.970203,CRI
 Côte d'Ivoire,AFR,Côte d'Ivoire,-5.5319,8.461729,CIV
 Croatia,ECA,Croatia,16.411778,45.251162,HRV
@@ -45,7 +45,7 @@ Djibouti,MENA,Djibouti,42.577765,11.749676,DJI
 Dominica,LAC,Dominica,-61.355757,15.435595,DMA
 Dominican Republic,LAC,Dominican Republic,-70.223715,18.965607,DOM
 Ecuador,LAC,Ecuador,-78.340114,-1.142781,ECU
-"Egypt, Arab Republic of",MENA,Egypt,29.790197,26.55378,EGY
+Arab Republic of Egypt,MENA,Egypt,29.790197,26.55378,EGY
 El Salvador,LAC,El Salvador,-88.866512,13.736897,SLV
 Equatorial Guinea,AFR,Equatorial Guinea,10.341982,1.712339,GNQ
 Eritrea,AFR,Eritrea,38.841286,15.373203,ERI
@@ -56,7 +56,7 @@ Fiji,EAP,Fiji,171.983227,-17.45353,FJI
 Finland,Other,Finland,26.693329,63.741386,FIN
 France,Other,France,2.551955,46.564502,FRA
 Gabon,AFR,Gabon,11.797236,-0.590944,GAB
-"Gambia, The",AFR,Gambia,-15.386643,13.452649,GMB
+The Gambia,AFR,Gambia,-15.386643,13.452649,GMB
 Georgia,ECA,Georgia,43.517446,42.176312,GEO
 Germany,Other,Germany,10.393662,51.106592,DEU
 Ghana,AFR,Ghana,-1.207301,7.177092,GHA
@@ -72,7 +72,7 @@ Hungary,ECA,Hungary,19.413448,47.166502,HUN
 Iceland,Other,Iceland,-18.605467,64.997588,ISL
 India,SA,India,79.386009,22.326122,IND
 Indonesia,EAP,Indonesia,117.300428,-2.230214,IDN
-"Iran, Islamic Republic of",MENA,Iran,54.301402,32.565771,IRN
+Islamic Republic of Iran,MENA,Iran,54.301402,32.565771,IRN
 Iraq,MENA,Iraq,43.772135,33.048024,IRQ
 Ireland,Other,Ireland,-8.150579,53.176382,IRL
 Israel,MENA,Israel,34.888721,30.801039,ISR
@@ -83,8 +83,8 @@ Jordan,MENA,Jordan,36.288613,31.312616,JOR
 Kazakhstan,ECA,Kazakhstan,67.302857,48.160272,KAZ
 Kenya,AFR,Kenya,37.858021,0.529562,KEN
 Kiribati,EAP,Kiribati,-154.458271,1.834562,KIR
-"Korea, Democratic People's Republic of",EAP,Democratic People's Republic of Korea,127.181957,40.143064,PRK
-"Korea, Republic of",EAP,Korea,127.834772,36.375089,KOR
+Democratic People's Republic of Korea,EAP,Democratic People's Republic of Korea,127.181957,40.143064,PRK
+Republic of Korea,EAP,Korea,127.834772,36.375089,KOR
 Kosovo,ECA,Kosovo,20.872,42.571,
 Kuwait,MENA,Kuwait,47.590876,29.340791,KWT
 Kyrgyz Republic,ECA,Kyrgyz Republic,74.555597,41.465055,KGZ
@@ -96,7 +96,7 @@ Liberia,AFR,Liberia,-9.307914,6.448092,LBR
 Libya,MENA,Libyan Arab Jamahiriya,18.023287,27.043954,LBY
 Lithuania,ECA,Lithuania,23.898123,55.33567,LTU
 Luxemburg,Other,Luxembourg,6.087814,49.77063,LUX
-"Macedonia, Former Yugoslav Republic of",ECA,Macedonia,21.697476,41.599682,MKD
+Former Yugoslav Republic of Macedonia,ECA,Macedonia,21.697476,41.599682,MKD
 Madagascar,AFR,Madagascar,46.706039,-19.373383,MDG
 Malawi,AFR,Malawi,34.307155,-13.216022,MWI
 Malaysia,EAP,Malaysia,109.708194,3.792367,MYS
@@ -106,7 +106,7 @@ Marshall Islands,EAP,Marshall Islands,168.626921,7.643273,MHL
 Mauritania,AFR,Mauritania,-10.332298,20.259851,MRT
 Mauritius,AFR,Mauritius,57.870737,-20.251869,MUS
 Mexico,LAC,Mexico,-102.532885,23.950464,MEX
-"Micronesia, Federated States of",EAP,Micronesia,159.404221,6.49238,FSM
+Federated States of Micronesia,EAP,Micronesia,159.404221,6.49238,FSM
 Moldova,ECA,Moldova,28.473931,47.193869,MDA
 Mongolia,EAP,Mongolia,103.083218,46.835291,MNG
 Montenegro,ECA,Montenegro,19.250305,42.791593,MNE
@@ -182,6 +182,6 @@ Vanuatu,EAP,Vanuatu,167.718146,-16.255053,VUT
 Venezuela,LAC,Venezuela,-65.647727,7.786605,VEN
 Vietnam,EAP,Vietnam,108.341384,14.287268,VNM
 West Bank and Gaza,MENA,Western Sahara,-13.421179,24.803991,ESH
-"Yemen, Republic of",MENA,Yemen,47.599591,15.905517,YEM
+Republic of Yemen,MENA,Yemen,47.599591,15.905517,YEM
 Zambia,AFR,Zambia,27.466171,-13.927416,ZMB
 Zimbabwe,AFR,Zimbabwe,29.729518,-19.379617,ZWE

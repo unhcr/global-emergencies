@@ -12,7 +12,7 @@ try:
     data_file = csv.DictReader(open('data/update-data/unhcr-relief-items.csv', 'rb'), delimiter= ',', quotechar = '"')
     data_sort = sorted(data_file, key=lambda x: x['isocode'])
 
-    geo_file = open('data/process-data/world-full-centroids.geojson', "rb").read()
+    geo_file = open('data/process-data/world-centroids.geojson', "rb").read()
     geo = json.loads(geo_file)
 
     country_data = []
@@ -45,7 +45,7 @@ try:
     rowid = 0
     for g in geo['features']:
         for c in country_data:
-            if g['properties']['ISO_A3'] == c[1]:
+            if g['properties']['iso'] == c[1]:
                 rowid = rowid + 1
                 itemKeys = c[3].keys()
                 data = {
@@ -112,7 +112,7 @@ try:
     rowid = 0
     for g in geo['features']:
         for c in country_data:
-            if g['properties']['ISO_A3'] == c[0]:
+            if g['properties']['iso'] == c[0]:
                 rowid = rowid + 1
                 data = {
                     "type": "Feature", 
@@ -120,7 +120,7 @@ try:
                     "properties": {
                         'isocode': c[0],
                         'total': c[2],
-                        'country': g['properties']['NAME']
+                        'country': g['properties']['name']
                     },
                 "geometry": g['geometry']
                 }

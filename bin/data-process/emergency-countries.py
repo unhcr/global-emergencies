@@ -1,4 +1,4 @@
-import sys, csv, os
+import sys, csv, os, traceback
 import simplejson as json
 from itertools import groupby
 
@@ -53,5 +53,6 @@ try:
 	f_out = open('data/geo/emergency-countries.geojson', 'wb')
 	f_out.writelines(data_writeout)
 	f_out.close()
-except:
-	print "Unexpected error: %s" % sys.argv[0]
+except StandardError, err:
+    print "Unexpected error"
+    traceback.print_exc(file=sys.stdout)
