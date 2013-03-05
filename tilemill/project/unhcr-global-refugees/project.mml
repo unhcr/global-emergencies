@@ -16,10 +16,10 @@
     "template_teaser": "<div class='int-bigcolumn'>\n<div class='int-title'>{{{host}}}</div>\n<div class='col1'>\n<div class=\"item1\">Pct Female: <span class=\"pct\">{{{pct_female}}}%</span></div>\n<div class=\"item2\">Pct Male: <span class=\"pct\">{{{pct_male}}}%</span></div>\n<div class=\"item3\">Pct Under-18: <span class=\"pct\">{{{pct_under18}}}%</span></div>\n</div>\n<div class='col2'>\n<div class='bignum'>{{{refugee_pop_str}}} people displaced</div>\n</div>\n<div class='int-date'>(Updated: {{{date}}})</div>\n</div>",
     "fields": [
       "host",
-      "refugee_pop_str",
       "pct_female",
       "pct_male",
       "pct_under18",
+      "refugee_pop_str",
       "date"
     ],
     "template_location": ""

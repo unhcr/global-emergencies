@@ -7,7 +7,7 @@ from itertools import groupby
 # -----------------------
 try: 
 	os.chdir("../")
-	data_file = csv.DictReader(open('data/update-data/unhcr-refugee-figures.csv', 'rb'), delimiter= ',', quotechar = '"')
+	data_file = csv.DictReader(open('data/update-data/unhcr-refugee-figures.csv', 'rU'), delimiter= ',', quotechar = '"')
 	data_sort = sorted(data_file, key=lambda x: x['refugee_pop'])
 
 	geo_file = open('data/process-data/world-full.geojson', "rb").read()
@@ -36,9 +36,9 @@ try:
 		    			'isocode': d['isocode'],
 		        		'host': d['host'],
 		        		'emergency': d['emergency'],
-		        		'refugee_pop': int(d['refugee_pop']),
-		        		'refugee_pop_str': "{:,}".format(int(d['refugee_pop'])),
-		        		'refugee_pop_short': "{:,}".format(int(float(d['refugee_pop'])/1000)),
+		        		'refugee_pop': int(d['refugee_pop']) if d['refugee_pop'] != "" else 0,
+		        		'refugee_pop_str': "{:,}".format(int(d['refugee_pop'])) if d['refugee_pop'] != "" else "",
+		        		'refugee_pop_short': "{:,}".format(int(float(d['refugee_pop'])/1000)) if d['refugee_pop'] != "" else "",
 		       			'comment': d['comment'],
 		        		'date': d['date'],
 		        		'pct_male': int(float(d['pct_male'].rstrip("%"))) if d['pct_male'] != "" else "",

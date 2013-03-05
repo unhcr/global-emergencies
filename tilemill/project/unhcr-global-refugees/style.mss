@@ -18,6 +18,7 @@
   marker-line-opacity:0.9;
   marker-allow-overlap:true;
   [zoom <= 2]{
+  [refugee_pop = 0]{marker-opacity:0;text-opacity:0;}
   [refugee_pop > 0][refugee_pop <= 100000]{marker-width:25;}
   [refugee_pop > 100000][refugee_pop <= 350000]{marker-width:35;}
   [refugee_pop > 350000][refugee_pop <= 500000]{marker-width:45;}
@@ -26,6 +27,7 @@
   text-size: 10;    
   }
   [zoom = 3]{
+  [refugee_pop = 0]{marker-opacity:0;text-opacity:0;}   
   [refugee_pop > 0][refugee_pop <= 100000]{marker-width:35;}
   [refugee_pop > 100000][refugee_pop <= 350000]{marker-width:45;}
   [refugee_pop > 350000][refugee_pop <= 500000]{marker-width:55;}
@@ -33,6 +35,7 @@
   [refugee_pop > 1000000]{marker-width:75;}    
   }
   [zoom > 3]{
+  [refugee_pop = 0]{marker-opacity:0;text-opacity:0;} 
   [refugee_pop > 0][refugee_pop <= 100000]{marker-width:45;}
   [refugee_pop > 100000][refugee_pop <= 350000]{marker-width:55;}
   [refugee_pop > 350000][refugee_pop <= 500000]{marker-width:65;}
