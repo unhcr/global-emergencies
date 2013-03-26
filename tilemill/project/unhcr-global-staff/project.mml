@@ -1,8 +1,8 @@
 {
   "bounds": [
-    -45.7031,
+    -39.9902,
     -22.5937,
-    75.5859,
+    106.6113,
     55.9738
   ],
   "center": [
@@ -17,7 +17,8 @@
     "fields": [
       "country",
       "emergency_deployments",
-      "num_staff"
+      "num_staff",
+      "date_update"
     ],
     "template_location": ""
   },

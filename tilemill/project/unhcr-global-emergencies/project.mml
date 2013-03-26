@@ -1,9 +1,9 @@
 {
   "bounds": [
-    -22.5,
+    -21.9726,
     -22.2688,
-    71.543,
-    44.0876
+    119.5313,
+    50.8476
   ],
   "center": [
     17.0508,
@@ -16,6 +16,8 @@
     "template_teaser": "<div class='int-general'>\n<div class='int-title'>{{{emergency}}}</div>\n<div class='int-note'>Activated: {{{declaration}}}</div>\n{{^deactivation}} \n{{/deactivation}}\n{{#deactivation}} \n<div class='int-note'>Deactived: {{{deactivation}}}</div>\n{{/deactivation}}\n<div class='int-note'>{{{note}}}</div>\n</div>",
     "fields": [
       "emergency",
+      "declaration",
+      "deactivation",
       "note",
       "url"
     ],
