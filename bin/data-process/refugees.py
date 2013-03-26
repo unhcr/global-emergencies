@@ -3,7 +3,7 @@ import simplejson as json
 from itertools import groupby
 
 # -----------------------
-# Process Emergency Centroids File
+# Process Refugee Centroids File
 # -----------------------
 try: 
 	os.chdir("../")
@@ -12,16 +12,6 @@ try:
 
 	geo_file = open('data/process-data/world-centroids.geojson', "rb").read()
 	geo = json.loads(geo_file)
-
-	#"properties": {"comment": "", 
-	# 	"host": "Burkina Faso",
-	#  	"pct_under18": "53.00%",
-	#   "emergency": "Mali emergency",
-	#    "date": "10/31/12", 
-	#    "isocode": "BFA", 
-	#    "pct_female": "49.00%",
-	#    "refugee_pop": "35859", 
-	#	 "pct_male": "51.00%"}},
 
 	geodata = {"type": "FeatureCollection","features": []}
 	rowid = 0

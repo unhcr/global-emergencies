@@ -8,8 +8,7 @@
 @red2: rgb(159,28,20);
 @red3: rgb(229,38,26);
 
-
-#emergencies [map = 1]{
+#emergencies {
   marker-width:30;
   marker-fill:#f45;
   marker-line-color:#813;
@@ -20,7 +19,4 @@
   [zoom >= 4][zoom < 5]{marker-transform:scale(2,2);}
   [zoom >= 5][zoom < 6]{marker-transform:scale(2.5,2.5);}
 }
-
-
-
 

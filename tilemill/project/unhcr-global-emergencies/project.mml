@@ -13,7 +13,7 @@
   "format": "png",
   "interactivity": {
     "layer": "emergencies",
-    "template_teaser": "<div class='int-general'>\n<div class='int-title'>{{{emergency}}}</div>\n<div class='int-date'>{{{note}}}</div>\n</div>",
+    "template_teaser": "<div class='int-general'>\n<div class='int-title'>{{{emergency}}}</div>\n<div class='int-note'>Activated: {{{declaration}}}</div>\n{{^deactivation}} \n{{/deactivation}}\n{{#deactivation}} \n<div class='int-note'>Deactived: {{{deactivation}}}</div>\n{{/deactivation}}\n<div class='int-note'>{{{note}}}</div>\n</div>",
     "fields": [
       "emergency",
       "note",
@@ -31,17 +31,17 @@
     {
       "geometry": "point",
       "extent": [
-        -3.539079383008624,
-        -2.879592934880221,
-        38.50464856599531,
-        35.02299323188233
+        -2.717947,
+        -1.997892,
+        96.506921,
+        35.01313400000001
       ],
       "id": "emergencies",
       "class": "",
       "Datasource": {
-        "file": "../../../data/site-data/unhcr-portals.geojson",
+        "file": "../../../data/geo/emergencies.geojson",
         "id": "emergencies",
-        "project": "unhcr-emergencies",
+        "project": "unhcr-global-emergencies",
         "srs": ""
       },
       "srs-name": "autodetect",

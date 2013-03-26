@@ -9,7 +9,6 @@
 @red2: rgb(159,28,20);
 @red3: rgb(229,38,26);
 
-
 #staff {
   marker-line-color:lighten(@blue3,10);
   line-width:0.5;

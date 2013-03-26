@@ -333,6 +333,11 @@ ul {
   color: #444;
   max-width: 310px!important;
  }
+ .int-title-note{
+  font-size: 11px;
+  font-style: italic;
+  margin-top: 8px;
+ }
 .int-value {
   border-top: 1px dashed #ccc;
   padding-top: 8px;
@@ -348,6 +353,13 @@ ul {
   font-size: 11px;
   color: #444;
   margin-top: 12px;
+  font-style: italic;
+}
+.int-note {
+  float: left;
+  font-size: 11px;
+  color: #444;
+  margin-top: 8px;
 }
 .int-column {
   margin-top: 10px;
@@ -432,6 +444,7 @@ ul {
   font-size: 11px;
   color: #444;
   margin-top: 110px;
+  font-style: italic;
 }
 
 .int-table {

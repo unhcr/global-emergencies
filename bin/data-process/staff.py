@@ -30,7 +30,9 @@ try:
 		        		'emergency': d['emergency'],
 		        		'num_staff': int(d['num_staff']),
 		        		'emergency_deployments': int(d['emergency_deployments']),
-		        		'url': d['url_unhcr_inperson']
+		        		'url': d['url_unhcr_inperson'],
+		        		'date_active': d['date_active'],
+		        		'date_update': d['date_update']
 		    		}, 
 		    		"geometry": g['geometry']
 		    		}

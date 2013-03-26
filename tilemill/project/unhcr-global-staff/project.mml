@@ -13,7 +13,7 @@
   "format": "png",
   "interactivity": {
     "layer": "staff",
-    "template_teaser": "<div class='int-general'>\n<div class='int-title'>{{{country}}}</div>\n<div class='int-value'><span class='value-bold'>{{{emergency_deployments}}}</span> Emergency Deployments</div>\n<div class='int-value2'><span class='value-bold'>{{{num_staff}}}</span> Total staff</div>\n<div class='int-date'></div>\n</div>",
+    "template_teaser": "<div class='int-general'>\n<div class='int-title'>{{{country}}}</div>\n<div class='int-title-note'>Active since: 2012/02/22</div>\n<div class='int-value'><span class='value-bold'>{{{emergency_deployments}}}</span> Emergency Deployments</div>\n<div class='int-value2'><span class='value-bold'>{{{num_staff}}}</span> Total staff</div>\n<div class='int-date'>(Updated: {{{date_update}}})</div>\n</div>",
     "fields": [
       "country",
       "emergency_deployments",

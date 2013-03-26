@@ -13,8 +13,6 @@ try:
 	geo_file = open('data/process-data/world-centroids.geojson', "rb").read()
 	geo = json.loads(geo_file)
 
-	#isocode,emergency,url,mapped
-
 	geodata = {"type": "FeatureCollection","features": []}
 	rowid = 0
 	for g in geo['features']:
