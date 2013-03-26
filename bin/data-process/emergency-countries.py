@@ -7,8 +7,8 @@ from itertools import groupby
 # -----------------------
 try: 
 	os.chdir("../")
-	data_file = csv.DictReader(open('data/update-data/unhcr-refugee-figures.csv', 'rU'), delimiter= ',', quotechar = '"')
-	data_sort = sorted(data_file, key=lambda x: x['refugee_pop'])
+	data_file = csv.DictReader(open('data/update-data/unhcr-emergency-country.csv', 'rU'), delimiter= ',', quotechar = '"')
+	data_sort = sorted(data_file, key=lambda x: x['isocode'])
 
 	geo_file = open('data/process-data/world-full.geojson', "rb").read()
 	geo = json.loads(geo_file)
@@ -25,15 +25,15 @@ try:
 		    		"properties": {
 		    			'isocode': d['isocode'],
 		        		'host': d['host'],
-		        		'emergency': d['emergency'],
-		        		'refugee_pop': int(d['refugee_pop']) if d['refugee_pop'] != "" else 0,
-		        		'refugee_pop_str': "{:,}".format(int(d['refugee_pop'])) if d['refugee_pop'] != "" else "",
-		        		'refugee_pop_short': "{:,}".format(int(float(d['refugee_pop'])/1000)) if d['refugee_pop'] != "" else "",
-		       			'comment': d['comment'],
-		        		'date': d['date'],
-		        		'pct_male': int(float(d['pct_male'].rstrip("%"))) if d['pct_male'] != "" else "",
-		        		'pct_female': int(float(d['pct_female'].rstrip("%"))) if d['pct_female'] != "" else "",
-		        		'pct_under18': int(float(d['pct_under18'].rstrip("%"))) if d['pct_under18'] != "" else ""
+		#        		'emergency': d['emergency'],
+		#        		'refugee_pop': int(d['refugee_pop']) if d['refugee_pop'] != "" else 0,
+		#        		'refugee_pop_str': "{:,}".format(int(d['refugee_pop'])) if d['refugee_pop'] != "" else "",
+		#        		'refugee_pop_short': "{:,}".format(int(float(d['refugee_pop'])/1000)) if d['refugee_pop'] != "" else "",
+		#       			'comment': d['comment'],
+		#        		'date': d['date'],
+		#        		'pct_male': int(float(d['pct_male'].rstrip("%"))) if d['pct_male'] != "" else "",
+		#        		'pct_female': int(float(d['pct_female'].rstrip("%"))) if d['pct_female'] != "" else "",
+		#        		'pct_under18': int(float(d['pct_under18'].rstrip("%"))) if d['pct_under18'] != "" else ""
 		    		}, 
 		    		"geometry": g['geometry']
 		    		}
