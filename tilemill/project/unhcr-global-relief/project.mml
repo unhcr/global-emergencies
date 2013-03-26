@@ -13,7 +13,7 @@
   "format": "png",
   "interactivity": {
     "layer": "items",
-    "template_teaser": "<div class='int-table'>\n<div class='int-title'>{{{country}}}</div>\n<div class='int-value'><span class='value-bold'>{{{total_str}}}</span> relief items distributed</div>\n<table class='relief-table'>\n<tr class='row1'>\n<td><span class='sleepingMats'>Sleeping Mats: </span><span class='table-number'>{{{sleepingMats}}}</span></td>\n<td><span class='blankets'>Blankets: </span><span class='table-number'>{{{blankets}}}</span></td>\n</tr>\n<tr class='row2'>\n<td><span class='mosquitoNets'>Mosquito Nets: </span><span class='table-number'>{{{mosquitoNets}}}</span></td>\n<td><span class='kitchenSets'>Kitchen Sets: </span><span class='table-number'>{{{kitchenSets}}}</span></td>\n</tr>\n<tr class='row3'>\n<td><span class='tent'>Tents: </span><span class='table-number'>{{{tents}}}</span></td>\n<td><span class='jerryCans'>Jerry Cans: </span><span class='table-number'>{{{jerryCans}}}</span></td>\n</tr>\n</table>\n<div class='int-date'>(Updated: {{{date}}})</div>\n</div>\n",
+    "template_teaser": "<div class='int-table'>\n<div class='int-title'>{{{country}}}</div>\n<div class='int-value'><span class='value-bold'>{{{total_str}}}</span> relief items distributed \n{{^dist_since}}\n{{/dist_since}}\n{{#dist_since}}\nsince {{{dist_since}}}\n{{/dist_since}}\n</div>\n<table class='relief-table'>\n<tr class='row1'>\n<td><span class='sleepingMats'>Sleeping Mats: </span><span class='table-number'>{{{sleepingMats}}}</span></td>\n<td><span class='blankets'>Blankets: </span><span class='table-number'>{{{blankets}}}</span></td>\n</tr>\n<tr class='row2'>\n<td><span class='mosquitoNets'>Mosquito Nets: </span><span class='table-number'>{{{mosquitoNets}}}</span></td>\n<td><span class='kitchenSets'>Kitchen Sets: </span><span class='table-number'>{{{kitchenSets}}}</span></td>\n</tr>\n<tr class='row3'>\n<td><span class='tent'>Tents: </span><span class='table-number'>{{{tents}}}</span></td>\n<td><span class='jerryCans'>Jerry Cans: </span><span class='table-number'>{{{jerryCans}}}</span></td>\n</tr>\n</table>\n<div class='int-date'>(Updated: {{{date}}})</div>\n</div>\n",
     "fields": [
       "country",
       "total_str",
@@ -47,8 +47,8 @@
       "Datasource": {
         "file": "../../../data/geo/unhcr-relief-items-arcs.geojson",
         "id": "relief",
-        "project": "unhcr-relief",
-        "srs": ""
+        "project": "unhcr-global-relief",
+        "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
       },
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",

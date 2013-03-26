@@ -25,12 +25,14 @@ try:
         date = []
         country = []
         ctry_from = []
+        since = []
         for re in relief: 
             country.append(re['country'])
             ctry_from.append(re['from'])
             items.append(re['items'])
             amounts.append(int(re['total']))
             date.append(re['date'])
+            since.append(re['distr_since'])
         relief_data.append(ctry_from.pop())
         relief_data.append(r)
         relief_data.append(sum(amounts))
@@ -39,6 +41,7 @@ try:
         relief_data.append(date.pop())
         relief_data.append(items)
         relief_data.append(country.pop())
+        relief_data.append(since.pop())
         country_data.append(relief_data)
 
     geodata = {"type": "FeatureCollection","features": []}
@@ -62,7 +65,8 @@ try:
                         'kitchenSets': "",
                         'tents': "",
                         'date': c[4],
-                        'country': c[6]
+                        'country': c[6],
+                        'dist_since': c[7]
                     }, 
                 "geometry": g['geometry']
                 }
