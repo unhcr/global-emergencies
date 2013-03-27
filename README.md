@@ -23,7 +23,7 @@ Use [Ruby Gem](http://rubygems.org/) to install:
 
     # This will check out the site from the remote repository on
     # GitHub and place it in a local directory named unhcr-emergencies/
-    git clone https://github.com/developmentseed/unhcr-emergencies.git
+    git clone https://github.com/unhcr/global-emergencies.git
     # Your site should now be here:
     ls global-emergencies/
 
