@@ -2,8 +2,6 @@
   "profile": "true",
   "files": "../tilemill",
   "bufferSize": 544,
-  "syncAccount": "unhcr",
-  "syncAccessToken": "PbKzXXq0kjORhC-njeJoxaX0_4c=FQ1hRpXN10b19bbfc359efc2526ed11094b7ec87561724b9c3445c91d241883e5e28d628bb965aea5e474d213ee3789bb3d161f4",
   "updatesVersion": "0.10.1",
   "updatesTime": 1357752509951,
   "updates": true,
