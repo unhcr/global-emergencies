@@ -1,7 +1,12 @@
 isocode,emergency,url,map,note
 SYR,Syria Emergency,http://data.unhcr.org/syrianrefugees,yes,"Armed conflict in Syria has displaced more than a million civilians since the begining of the conflict. Many are crossing borders into Jordan, Lebanon, Turkey and Iraq, straining the capacity of host communities and governments."
-MLI,Mali Emergency,http://data.unhcr.org/MaliSituation,yes,"More than 200,000 people have fled their homes in Mali since January 2012, when rebels seized control of the northern part of the country."
-SSD,South Sudan Emergency,http://data.unhcr.org/SouthSudan,yes,"Since June 2011, heavy fighting in Sudan’s South Kordofan and Blue Nile states has driven tens of thousands of people across the border into Ethiopia and newly independent South Sudan."
+MLI,Sahel Emergency,http://data.unhcr.org/SahelSituation,yes,"More than 200,000 people have fled their homes in Mali since January 2012, when rebels seized control of the northern part of the country."
+SSD,South Sudan Situation,http://data.unhcr.org/SouthSudan,yes,"Since June 2011, heavy fighting in Sudan’s South Kordofan and Blue Nile states has driven tens of thousands of people across the border into Ethiopia and newly independent South Sudan."
 SOM,Horn of Africa Emergency,http://data.unhcr.org/horn-of-africa,yes,
 LBR,Liberia,http://data.unhcr.org/liberia,yes,
-ETH,Sudanese in Ethiopia,http://data.unhcr.org/Sudanese_Refugees_in_Ethiopia,yes,
+CIV, Cote d'Ivoire,http://data.unhcr.org/cotedivoire,yes
+CAF, Central African Republic,http://data.unhcr.org/car,yes
+COD, DRC Regional Refugee Response,http://data.unhcr.org/drc,yes
+NGA, Nigeria Situation,http://data.unhcr.org/nigeriasituation,yes
+
+

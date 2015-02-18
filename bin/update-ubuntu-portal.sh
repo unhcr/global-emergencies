@@ -15,7 +15,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Render and Upload Maps 
 # For Ubuntu: /usr/share/tilemill/
 #node /usr/share/tilemill/index.js export unhcr-global-emergencies unhcr-global-emergencies.mbtiles --format=sync --config=$DIR/../tilemill/global-emergencies-config.json
-#node /usr/share/tilemill/index.js export unhcr-global-emergency-countries unhcr-global-emergency-outlines.mbtiles --format=sync --config=$DIR/../tilemill/global-emergencies-config.json
+node /usr/share/tilemill/index.js export unhcr-global-emergency-countries unhcr-global-emergency-outlines.mbtiles --format=sync --config=$DIR/../tilemill/global-emergencies-config.json
 node /usr/share/tilemill/index.js export unhcr-global-infoportals unhcr-global-infoportal.mbtiles --format=sync --config=$DIR/../tilemill/global-emergencies-config.json
 # node /usr/share/tilemill/index.js export unhcr-global-offices unhcr-global-offices.mbtiles --format=sync --config=$DIR/../tilemill/global-emergencies-config.json
 # node /usr/share/tilemill/index.js export unhcr-global-pct-funded unhcr-global-pct-funded.mbtiles --format=sync --config=$DIR/../tilemill/global-emergencies-config.json
